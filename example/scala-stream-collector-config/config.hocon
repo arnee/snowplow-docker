@@ -17,7 +17,7 @@ collector {
     enabled = false
     expiration = "365 days"
     name = collectorCookieName
-    domain = cookieDomain
+    # domain = cookieDomain
   }
 
   cookieBounce {
