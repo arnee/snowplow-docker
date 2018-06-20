@@ -39,9 +39,7 @@ collector {
     useIpAddressAsPartitionKey = false
 
     sink {
-      enabled = nsq
-      host = "nsqd"
-      port = 4150
+      enabled = stdout
     }
 
     buffer {
