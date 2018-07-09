@@ -40,8 +40,10 @@ collector {
 
     sink {
       enabled = kafka
-      host = "nsqd"
-      port = 4150
+      # Or Kafka
+      brokers = "{{kafkaBrokers}}"
+      ## Number of retries to perform before giving up on sending a record
+      retries = 1
     }
 
     buffer {
